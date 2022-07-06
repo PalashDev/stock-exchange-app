@@ -1,3 +1,4 @@
+import { company } from 'src/app/Models/company';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, Observable, throwError } from 'rxjs';
@@ -7,7 +8,7 @@ import { catchError, Observable, throwError } from 'rxjs';
 })
 export class PostService {
   constructor(private httpClient: HttpClient) { }
-  private apiURL = "https://jsonplaceholder.typicode.com";
+  private apiURL = "http://localhost:56985";
     
   /*------------------------------------------
   --------------------------------------------
@@ -22,7 +23,8 @@ export class PostService {
 
   public saveCompany(requestData: any): Observable<any> {
     console.log(requestData);
-    return this.httpClient.post<any>(this.apiURL + '/saveCompany/', requestData,this.httpOptions)
+    var date =   new company('company1','CNCTGD', 'Tiger', 1000, 'tgt.kz', 'BSE');
+    return this.httpClient.post<any>(this.apiURL + '/api/v1.0/market/company/register',  date)
     .pipe(
       catchError(this.errorHandler)
     )

@@ -65,22 +65,7 @@ export class AddStockDetailComponent implements OnInit {
   }
 
   companies :company[] = [
-    new company('company1','c01'),
-    new company('company2','c02'),
-    new company('company3','c03'),
-    new company('company4','c04'),
-    new company('company5','c05'),
-    new company('company6','c06'),
-    new company('company7','c07'),
-    new company('company8','c08'),
-    new company('company9','c09'),
-    new company('company10','c10'),
-    new company('company11','c11'),
-    new company('company12','c12'),
-    new company('company13','c13'),
-    new company('company14','c14'),
-    new company('company15','c15'),
-    new company('company16','c16'),  
+    new company('company1','c01', 'Tiger', 1000, 'tgt.kz', 'BSE')
   ]
 
 }

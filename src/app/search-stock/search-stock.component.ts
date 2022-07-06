@@ -108,33 +108,12 @@ export class SearchStockComponent implements OnInit {
  
 
  companies :company[] = [
-  new company('company1','c01'),
-  new company('company2','c02'),
-  new company('company3','c03'),
-  new company('company4','c04'),
-  new company('company5','c05'),
-  new company('company6','c06'),
-  new company('company7','c07'),
-  new company('company8','c08'),
-  new company('company9','c09'),
-  new company('company10','c10'),
-  new company('company11','c11'),
-  new company('company12','c12'),
-  new company('company13','c13'),
-  new company('company14','c14'),
-  new company('company15','c15'),
-  new company('company16','c16'),  
+  new company('company1','c01', 'Tiger', 1000, 'tgt.kz', 'BSE')
 ]
 
  stocks= [
   new stock(100, DateTime.fromObject({ year: 2017, month: 7, day: 15, hour: 8, minute: 10})),
-  new stock(101, DateTime.fromObject({ year: 2018, month: 10, day: 5, hour: 7, minute: 20 })),
-  new stock(105, DateTime.fromObject({ year: 2018, month: 12, day: 14, hour: 10, minute: 40 })),
-  new stock(120, DateTime.fromObject({ year: 2019, month: 1, day: 10, hour: 12, minute: 15 })),
-  new stock(110, DateTime.fromObject({ year: 2019, month: 2, day: 20, hour: 13, minute: 57 })),
-  new stock(115, DateTime.fromObject({ year: 2020, month: 7, day: 7, hour: 11, minute: 45 })),
-  new stock(122, DateTime.fromObject({ year: 2020, month: 8, day: 9, hour: 15, minute: 45 })),
-  new stock(123, DateTime.fromObject({ year: 2021, month: 9, day: 18, hour: 14, minute: 20 })),
+  new stock(101, DateTime.fromObject({ year: 2018, month: 10, day: 5, hour: 7, minute: 20 }))
  
 ];
 }
